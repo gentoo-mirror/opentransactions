@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE pkgmetadata SYSTEM "https://www.gentoo.org/dtd/metadata.dtd">
+<pkgmetadata>
+  <maintainer type="project">
+    <email>justus@opentransactions.org</email>
+    <name>Open-Transactions</name>
+  </maintainer>
+  <longdescription>
+    The CsLibGuarded library is a standalone header only library for
+    multithreaded programming.
+
+    This library provides templated classes which prevent race conditions by
+    controlling access to shared data. Existing multithreading primitives like
+    mutexes and locks are only bound to the protected data by conventions. This
+    makes it very easy to introduce bugs in your code by forgetting to use the
+    right locks before accessing a block of data. The idea of this library is to
+    tie the data and the locks in a type safe interface that only allows correct
+    usage.
+  </longdescription>
+  <upstream>
+    <remote-id type="github">copperspice/cs_libguarded</remote-id>
+  </upstream>
+</pkgmetadata>
