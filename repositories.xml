@@ -1,0 +1,15 @@
+<?xml version="1.0" ?>
+<repositories version="1.0">
+    <repo quality="stable" status="official">
+      <name>opentransactions</name>
+      <description lang="en">Open-Transactions Gentoo Overlay</description>
+      <homepage>https://github.com/Open-Transactions/gentoo-overlay</homepage>
+      <owner type="project">
+        <email>justus@opentransactions.org</email>
+        <name>Open-Transactions</name>
+      </owner>
+      <source type="git">https://github.com/Open-Transactions/gentoo-overlay.git</source>
+      <source type="git">git+ssh://git@github.com/Open-Transactions/gentoo-overlay.git</source>
+      <feed>https://github.com/Open-Transactions/gentoo-overlay/commits/master.atom</feed>
+    </repo>
+</repositories>
