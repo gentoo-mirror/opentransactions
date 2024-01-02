@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE pkgmetadata SYSTEM "https://www.gentoo.org/dtd/metadata.dtd">
+<pkgmetadata>
+  <maintainer type="project">
+    <email>justus@opentransactions.org</email>
+    <name>Open-Transactions</name>
+  </maintainer>
+  <longdescription>
+    The otcommon package adds to the modules provided by CMake to perform common
+    tasks and enforce coding style policies for libopentxs and projects which
+    use it.
+  </longdescription>
+  <upstream>
+    <remote-id type="github">Open-Transactions/otcommon</remote-id>
+  </upstream>
+</pkgmetadata>
