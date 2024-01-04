@@ -1,0 +1,20 @@
+# This file is deprecated as per GLEP 56 in favor of metadata.xml.
+# Please add your descriptions to your package's metadata.xml ONLY.
+# * generated automatically using pmaint *
+
+dev-libs/opentxs:blockchain - Enables the blockchain client.
+dev-libs/opentxs:chaiscript - Enables smart contract scripting using ChaiScript
+dev-libs/opentxs:ed25519 - Enables ed25519 key support
+dev-libs/opentxs:jumbo-build - Combine source files to speed up build process, requires more memory
+dev-libs/opentxs:lmdb - Enables support for lmdb storage
+dev-libs/opentxs:lucre - Enables support for blinded OTX instruments using Lucre
+dev-libs/opentxs:pch-build - Enable precompiled header support for faster compilation at the expense of disk space and memory
+dev-libs/opentxs:pkt - Enables support for PacketCrypt proof of work validation in blockchain client
+dev-libs/opentxs:pstl - Use the C++ standard library for parallel algorithms
+dev-libs/opentxs:pstl-needs-tbb - Must be enabled when the standard library is libstdc++ Other standard libraries such as libc++ may or not not require this flag.
+dev-libs/opentxs:qml - Adds QML support to display models
+dev-libs/opentxs:rpc - Enables the RPC server
+dev-libs/opentxs:rsa - Enables RSA key support
+dev-libs/opentxs:secp256k1 - Enables secp256k1 key support
+dev-libs/opentxs:tbb - Use the TBB library for parallel algorithms
+dev-libs/opentxs:valgrind - Enable annotations for accuracy. WARNING: changes the format of on-disk memory mapped files.
