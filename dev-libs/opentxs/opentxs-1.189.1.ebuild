@@ -11,7 +11,7 @@ unset PROPERTIES
 DESCRIPTION="libopentxs financial cryptography library"
 HOMEPAGE="https://github.com/Open-Transactions/opentxs"
 EGIT_REPO_URI="https://github.com/Open-Transactions/opentxs"
-EGIT_COMMIT="58c159df5683c575f85801f0da1f2a2996652af1"
+EGIT_COMMIT="ae61a3c950727414b2d92427e2c772502e1d2c9f"
 EGIT_BRANCH="master"
 EGIT_MIN_CLONE_TYPE="single+tags"
 EGIT_SUBMODULES=( '*' )
@@ -39,6 +39,8 @@ REQUIRED_USE="
 
 RESTRICT="!test? ( test )"
 DEPEND="
+	dev-cpp/cs_libguarded
+	dev-cpp/frozen
 	dev-cpp/simpleini
 	dev-libs/boost
 	dev-libs/libsodium
