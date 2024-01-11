@@ -1,3 +1,4 @@
+dev-cpp/cmakerc 2.0.1_p20230724: A Resource Compiler in a Single CMake Script
 dev-cpp/cs_libguarded 1.4.1: Header-only library for multithreaded programming
 dev-cpp/frozen 1.1.1: A header-only, constexpr alternative to gperf for C++14 users
 dev-libs/opentxs 1.189.1: libopentxs financial cryptography library
