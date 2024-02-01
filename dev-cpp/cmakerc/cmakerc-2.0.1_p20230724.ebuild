@@ -14,7 +14,7 @@ LICENSE="MIT"
 SLOT="0"
 KEYWORDS="alpha amd64 arm arm64 hppa ia64 loong m68k mips ppc ppc64 riscv s390 sparc x86"
 
-RDEPEND=">=dev-util/cmake-3.6"
+RDEPEND=">=dev-build/cmake-3.6"
 
 src_unpack() {
 	unpack "${A}"

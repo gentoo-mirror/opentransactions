@@ -46,7 +46,7 @@ DEPEND="
 	dev-libs/libsodium
 	dev-libs/openssl
 	dev-libs/protobuf
-	>=dev-util/cmake-3.26.0
+	>=dev-build/cmake-3.26.0
 	net-libs/zeromq[sodium]
 	sys-libs/zlib
 	lmdb? ( dev-db/lmdb )

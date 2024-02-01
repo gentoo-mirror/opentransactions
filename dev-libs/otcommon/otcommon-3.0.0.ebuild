@@ -7,24 +7,23 @@ EAPI=8
 CMAKE_MAKEFILE_GENERATOR="ninja"
 inherit cmake
 
-DESCRIPTION="A header-only, constexpr alternative to gperf for C++14 users"
-HOMEPAGE="https://github.com/serge-sans-paille/frozen"
-# SRC_URI="https://github.com/serge-sans-paille/frozen/archive/refs/tags/${PV}.tar.gz -> ${PN}-${PV}.tar.gz"
-COMMIT_HASH="7e79c375b062311a1209c24c69460673202e1ef9"
-SRC_URI="https://github.com/serge-sans-paille/frozen/archive/${COMMIT_HASH}.tar.gz -> ${PN}-${COMMIT_HASH}.tar.gz"
+DESCRIPTION="CMake modules and dev support files for libopentxs and dependent projects"
+HOMEPAGE="https://github.com/Open-Transactions/otcommon"
+GIT_COMMIT_HASH="849b36b569d8404298bbed2691112b41630e35c7"
+GIT_DESCRIBE="3.0.0-0-g849b36b"
+SRC_URI="https://github.com/Open-Transactions/otcommon/archive/${GIT_COMMIT_HASH}.tar.gz"
 
-LICENSE="BSD-2"
+LICENSE="MPL-2.0"
 SLOT="0"
 KEYWORDS="alpha amd64 arm arm64 hppa ia64 loong m68k mips ppc ppc64 riscv s390 sparc x86"
 
-DEPEND=">=dev-build/cmake-3.16.0"
+DEPEND=">=dev-build/cmake-3.26.0"
 RDEPEND="${DEPEND}"
 BDEPEND=">=app-alternatives/ninja-1"
 
 src_unpack() {
 	unpack "${A}"
-#	S="${WORKDIR}/${PN}-${PV}"
-	S="${WORKDIR}/${PN}-${COMMIT_HASH}"
+	mv "${PN}-${GIT_COMMIT_HASH}" "${PN}-${PVR}"
 }
 
 src_prepare() {
@@ -32,6 +31,7 @@ src_prepare() {
 }
 
 src_configure() {
+	local mycmakeargs=( "-Dotcommon_GIT_VERSION=${GIT_DESCRIBE}" )
 	cmake_src_configure
 }
 
