@@ -9,8 +9,8 @@ inherit cmake
 
 DESCRIPTION="CMake modules and dev support files for libopentxs and dependent projects"
 HOMEPAGE="https://github.com/Open-Transactions/otcommon"
-GIT_COMMIT_HASH="00965633a5c9f64af360bfbd7a249a69fd109e29"
-GIT_DESCRIBE="3.1.3-0-g0096563"
+GIT_COMMIT_HASH="c349997a97b2f6b95306714c507cad3d0078c15c"
+GIT_DESCRIBE="3.2.0-0-gc349997"
 SRC_URI="https://github.com/Open-Transactions/otcommon/archive/${GIT_COMMIT_HASH}.tar.gz"
 
 LICENSE="MPL-2.0"
